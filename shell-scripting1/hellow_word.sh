@@ -1,2 +1,2 @@
 /* /bin/bash
-echo "hi nhow was the job"
+echo "hi how was new the job"
