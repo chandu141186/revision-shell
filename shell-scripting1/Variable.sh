@@ -1,5 +1,7 @@
 #!/bin/bash
-echo "ramesh: Give works to suresh"
-echo "suresh: get work  from ramesh"
-echo "ramesh: allocate github work to suresh"
-echo "suresh: ask some doubt on work assined by ramesh"
+person1 = ramesh
+person2 = suresh
+echo "$person1: Give works to $person2"
+echo "$person2: get work  from $person1"
+echo "$person1: allocate github work to $person2"
+echo "$person2: ask some doubt on work assined by $person1"
