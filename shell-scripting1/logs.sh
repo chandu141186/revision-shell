@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ID=$(id -u)
-TIMESTAMP=$(DATE+%F-%H-%M-%s)
+TIMESTAMP=$(date +%F-%H-%M-%S)
 LOG_FILE=/tmp/$0-$TIMESTAMP
 
 VALIDATE(){
