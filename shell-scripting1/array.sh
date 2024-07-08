@@ -2,7 +2,7 @@
 
 NAMES=("RAM" "BAM" "SHAM")
 
-echo "First name:: ${NAMES(0)}"
+echo "First name:: ${NAMES[0]}"
 
 echo "Second name:: ${NAMES(1)}"
 
