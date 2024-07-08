@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ID=$(id - u)
+ID=$(id -u)
 
 if ($ID -ne 0)
  echo "ERROR:: Please run this script with root access"
