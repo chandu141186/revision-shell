@@ -2,14 +2,15 @@
 
 NAMES=("RAM" "BAM" "SHAM")
 
-echo "Script name:: $NAMES(0)"
+echo "First name:: $NAMES(0)"
 
-echo "Script name:: $NAMES(1)"
-
-
-echo "Script name:: $NAMES(2)"
+echo "Second name:: $NAMES(1)"
 
 
+echo "THIRD name:: $NAMES(2)"
+
+
+echo "ALL name:: $NAMES(@)"
 
 
 
