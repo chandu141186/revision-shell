@@ -8,7 +8,7 @@ VALIDATE(){
     echo "ERROR:: $2 is failed"
     exit 1
  else
-    echo "Installing MySQL is SUCCESS"
+    echo " Error:: $2 is SUCCESS"
 fi
 
 }
@@ -21,7 +21,9 @@ else
 fi # fi means reverse of if, indicating condition end
 
 yum install mysql -y
+
  VALIDATE $? "Installing Mysql"
 
 yum install git -y
- VALIDATE $? "Installing Git"
+
+  VALIDATE $? "Installing Git"
