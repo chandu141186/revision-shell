@@ -5,7 +5,7 @@ TIMESTAMP=$(date +%F-%H-%M-%S)
 LOG_FILE=/tmp/$0-$TIMESTAMP
 R="\e[31m"
 G="\e(32m"
-N="\e(0m"
+N="\e[0m"
 
 VALIDATE(){
 
