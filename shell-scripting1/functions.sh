@@ -8,7 +8,7 @@ VALIDATE(){
     echo "ERROR:: $2 is failed"
     exit 1
  else
-    echo " Error:: $2 is SUCCESS"
+    echo "  $2 is SUCCESS"
 fi
 
 }
