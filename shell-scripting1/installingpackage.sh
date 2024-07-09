@@ -27,13 +27,16 @@ if [ $ID -ne 0 ]
 else
     echo "You are root user"
 fi # fi means reverse of if, indicating condition end
+
 for package in $@
- do
+
+do
   yum installed list $package &>> $LOG_FILE
     if [$? -ne 0]
-     then yum install $package -y  &>> $LOG_FILE
+    then 
+     yum install $package -y  &>> $LOG_FILE
      VALIDATE $? "Installation of $package" # validate
     else
         echo -e "$package is already installed ... $Y SKIPPING $N"
     fi
- done
+done
