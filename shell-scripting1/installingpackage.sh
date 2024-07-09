@@ -33,7 +33,8 @@ fi # fi means reverse of if, indicating condition end
 for package in $@
 
 do
-  yum installed list $package &>> $LOG_FILE
+
+  yum list installed $package &>> $LOG_FILE
     if [$? -ne 0]
     then 
      yum install $package -y  &>> $LOG_FILE
