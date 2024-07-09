@@ -36,7 +36,9 @@ do
 
   yum list installed $package &>> $LOG_FILE
     if [$? -ne 0]
+
     then 
+
      yum install $package -y  &>> $LOG_FILE
      VALIDATE $? "Installation of $package" # validate
     else
